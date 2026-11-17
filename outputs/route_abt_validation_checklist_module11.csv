@@ -1,0 +1,9 @@
+check,result,status,notes
+Duplicate route keys (origin + dest),0,Pass,Each route appears once
+"Missing key values (origin, dest)",0,Pass,Every row has both key values
+Missing ABT cells (all columns),25,Documented,Explained in dictionary notes for each column
+"Nonpositive flight counts, distances and air times",0,Pass,No impossible values found
+Routes with a negative max_arr_delay,4,Documented,Real values on very small routes; see max_arr_delay notes
+Missing target values (avg_arr_delay),1,Documented,EWR to LGA only; see avg_arr_delay notes
+ABT columns without a dictionary row,0,Pass,Every ABT column has a dictionary row
+Blank data dictionary cells,0,Pass,All dictionary fields are filled
